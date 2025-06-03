@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'GilroyLight';
+    src: url('../assets/fonts/Gilroy-Light.ttf');
+}
+@font-face {
+    font-family: 'GilroySemibold';
+    src: url('../assets/fonts/Gilroy-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter_24pt-Regular.ttf');
+}
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-Regular.ttf');
+}
+@font-face {
+    font-family: 'MerriweatherBlack';
+    src: url('../assets/fonts/Merriweather_24pt-Black.ttf');
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../assets/fonts/Merriweather_24pt-Regular.ttf');
+}
+@font-face {
+    font-family: 'ProstoOne';
+    src: url('../assets/fonts/ProstoOne-Regular.ttf');
+}
+:root {
+    --font-primary: "GilroySemibold", sans-serif;
+    --font-primary-light: "GilroyLight", sans-serif;
+    --font-secondary: "Merriweather", sans-serif;
+    --font-secondary-black: "MerriweatherBlack", sans-serif;
+    --third-family: "Inter", sans-serif;
+    --font3: "ProstoOne", sans-serif;
+    --font4: "Manrope", sans-serif;
+    --font5: "Inter", sans-serif;
+    --color-primary: #fff;
+    --grey: #757575;
+    --dark-grey: #353535;
+    --background: #191411;
+    --cards: #211a16;
+    --dangerous: #d3320f;
+}
