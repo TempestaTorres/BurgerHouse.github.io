@@ -35,10 +35,24 @@
     --font3: "ProstoOne", sans-serif;
     --font4: "Manrope", sans-serif;
     --font5: "Inter", sans-serif;
-    --color-primary: #fff;
+    --color-primary: #f3f5f6;
+    --color-logo: #d7dce2;
     --grey: #757575;
     --dark-grey: #353535;
-    --background: #191411;
+    --background: #111418;
     --cards: #211a16;
     --dangerous: #d3320f;
+}
+
+.bg-primary {
+    background-color: var(--background);
+}
+.bg-transparent {
+    background-color: transparent;
+}
+.font-primary {
+    font-family: var(--font-primary), 'sans-serif';
+}
+.color-primary {
+    color: var(--color-primary);
 }

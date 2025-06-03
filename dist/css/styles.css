@@ -1,0 +1,12 @@
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.burger-logo > path {
+    fill: var(--color-logo);
+}
+.hv-drop-shadow:hover {
+    filter: drop-shadow(0 0 0.5rem var(--color-primary));
+}
