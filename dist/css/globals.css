@@ -56,3 +56,6 @@
 .color-primary {
     color: var(--color-primary);
 }
+.color-muted {
+    color: var(--grey);
+}

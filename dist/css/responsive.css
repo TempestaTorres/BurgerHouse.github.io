@@ -1,0 +1,53 @@
+/* 1024 - 1199 */
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .navbar__links {
+        gap: 1.25rem;
+    }
+    .our-info {
+        gap: 0.625rem;
+    }
+
+}
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+
+    .container {
+        max-width: 768px;
+    }
+    .header-container {
+        flex-wrap: wrap-reverse;
+        gap: 1.25rem;
+        justify-content: center;
+    }
+    .info {
+        font-size: 1.125rem;
+    }
+    .time {
+        font-size: .875rem;
+        line-height: 1;
+    }
+    .svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+/* 425 - 767 */
+@media screen and (max-width: 767px) {
+
+    .container {
+        max-width: 425px;
+    }
+
+
+}
+/* 375 - 424 */
+@media screen and (max-width: 424px) {
+    .container {
+        max-width: 375px;
+    }
+
+}

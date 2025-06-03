@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="dist/css/effects.css">
     <link rel="stylesheet" href="dist/css/globals.css">
     <link rel="stylesheet" href="dist/css/styles.css">
+    <link rel="stylesheet" href="dist/css/responsive.css">
     <script src="dist/scripts/app.js"></script>
 </head>
-<body class="bg-primary color-primary">
+<body class="bg-primary color-primary font-primary">
     <div class="flex flex-col min-h-screen">
         <header class="header bg-transparent w-full fixed top-0 z-50 pt-10 pb-20">
             <div class="header-container container">
@@ -34,8 +35,45 @@
                 </a>
                 <!--   Nav Bar   -->
                 <nav class="navbar">
-
+                    <ul class="navbar__links flex-row-container gap-12">
+                        <li class="navbar-link text-lg hv-drop-shadow transition"><a href="#">Почему у нас</a></li>
+                        <li class="navbar-link text-lg hv-drop-shadow transition"><a href="#">Меню бургеров</a></li>
+                        <li class="navbar-link text-lg hv-drop-shadow transition"><a href="#">Доставка</a></li>
+                    </ul>
                 </nav>
+                <!--   Header Info   -->
+                <div class="our-info flex-row-container">
+                    <div class="schedule">
+                        <div class="inline-flex items-center gap-3">
+                            <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.9866 2.6665C8.62663 2.6665 2.66663 8.63984 2.66663 15.9998C2.66663 23.3598 8.62663 29.3332 15.9866 29.3332C23.36 29.3332 29.3333 23.3598 29.3333 15.9998C29.3333 8.63984 23.36 2.6665 15.9866 2.6665ZM16 26.6665C10.1066 26.6665 5.33329 21.8932 5.33329 15.9998C5.33329 10.1065 10.1066 5.33317 16 5.33317C21.8933 5.33317 26.6666 10.1065 26.6666 15.9998C26.6666 21.8932 21.8933 26.6665 16 26.6665ZM16.6666 9.33317H14.6666V17.3332L21.6666 21.5332L22.6666 19.8932L16.6666 16.3332V9.33317Z" fill="url(#paint0_linear_46_352)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_46_352" x1="2.66663" y1="2.6665" x2="31.6731" y2="5.5161" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#DA8023" />
+                                        <stop offset="1" stop-color="#E2B438" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span class="info text-2xl">Работаем</span>
+                        </div>
+                        <div class="time color-muted text-md">с 9:00 — 23:00</div>
+                    </div>
+                    <div class="info-phone">
+                        <div class="inline-flex items-center gap-3">
+                            <svg class="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.8334 29.3332C24.3667 29.3332 21.1054 28.6776 18.0494 27.3665C14.9934 26.0554 12.3267 24.2607 10.0494 21.9825C7.77202 19.7052 5.97202 17.0385 4.64935 13.9825C3.32669 10.9265 2.6658 7.65495 2.66669 4.16784C2.64447 3.76784 2.7778 3.41762 3.06669 3.11717C3.35558 2.81673 3.71113 2.6665 4.13335 2.6665H9.33335C9.73335 2.6665 10.0778 2.81673 10.3667 3.11717C10.6556 3.41762 10.8 3.7785 10.8 4.19984C10.8 5.17761 10.8667 6.09984 11 6.9665C11.1334 7.83317 11.3445 8.65539 11.6334 9.43317C11.7445 9.67761 11.7667 9.92739 11.7 10.1825C11.6334 10.4376 11.5 10.6767 11.3 10.8998L7.96669 14.2332C8.92224 16.1887 10.2778 18.0443 12.0334 19.7998C13.7889 21.5554 15.6778 22.9554 17.7 23.9998L21.0334 20.6665C21.2334 20.4665 21.4667 20.3332 21.7334 20.2665C22 20.1998 22.2667 20.2221 22.5334 20.3332C23.3556 20.5998 24.2058 20.8056 25.084 20.9505C25.9622 21.0954 26.8676 21.1674 27.8 21.1665C28.2222 21.1665 28.5836 21.3221 28.884 21.6332C29.1845 21.9443 29.3342 22.3221 29.3334 22.7665V27.8665C29.3334 28.2665 29.1889 28.6109 28.9 28.8998C28.6111 29.1887 28.2556 29.3332 27.8334 29.3332ZM26.6667 15.9998C26.6667 13.0221 25.6334 10.4998 23.5667 8.43317C21.5 6.3665 18.9778 5.33317 16 5.33317V2.6665C17.8445 2.6665 19.5778 3.01673 21.2 3.71717C22.8222 4.41762 24.2334 5.36739 25.4334 6.5665C26.6334 7.7665 27.5836 9.17762 28.284 10.7998C28.9845 12.4221 29.3342 14.1554 29.3334 15.9998H26.6667ZM21.3334 15.9998C21.3334 14.5332 20.8111 13.2776 19.7667 12.2332C18.7222 11.1887 17.4667 10.6665 16 10.6665V7.99984C18.2222 7.99984 20.1111 8.77761 21.6667 10.3332C23.2222 11.8887 24 13.7776 24 15.9998H21.3334Z" fill="url(#paint0_linear_46_354)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_46_354" x1="2.66431" y1="2.6665" x2="31.6733" y2="5.51661" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#DA8023" />
+                                        <stop offset="1" stop-color="#E2B438" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span class="info text-2xl">8 (800) 505-22-77</span>
+                        </div>
+                        <div class="time color-muted text-md">Мы на связи с вами</div>
+                    </div>
+                </div>
             </div>
         </header>
     </div>

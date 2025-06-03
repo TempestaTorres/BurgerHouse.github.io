@@ -383,6 +383,9 @@
 .gap-16 {
     gap: 4rem;
 }
+.gap-20 {
+    gap: 5rem;
+}
 .w-full {
     width: 100%;
 }
