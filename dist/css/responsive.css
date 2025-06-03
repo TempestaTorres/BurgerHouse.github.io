@@ -29,10 +29,14 @@
     .time {
         font-size: .875rem;
         line-height: 1;
+        margin-left: 35px;
     }
     .svg {
         width: 22px;
         height: 22px;
+    }
+    .navbar-link::before {
+        height: 0.1rem;
     }
 }
 /* 425 - 767 */
@@ -41,7 +45,16 @@
     .container {
         max-width: 425px;
     }
-
+    .text-lg {
+        font-size: 16px;
+    }
+    .logo {
+        order: 1;
+    }
+    .burger-logo {
+        width: 107px;
+        height: 25px;
+    }
 
 }
 /* 375 - 424 */
@@ -50,4 +63,13 @@
         max-width: 375px;
     }
 
+    .info {
+        font-size: 14px;
+    }
+    .time {
+        font-size: 10px;
+    }
+    .text-lg {
+        font-size: 13px;
+    }
 }
