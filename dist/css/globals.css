@@ -65,6 +65,15 @@
 .color-muted {
     color: var(--grey);
 }
+.subcolor {
+    color: var(--color-subcolor);
+}
 .color-label {
     color: var(--color-label);
+}
+.bg-radial {
+    background-image: radial-gradient(25% 75%, #fff 0%, #f0f 100%);
+}
+.glow img {
+    filter: drop-shadow(0 0 3rem #da8023); /*#da8023 #D7DCE2FF */
 }

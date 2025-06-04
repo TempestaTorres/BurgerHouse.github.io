@@ -13,6 +13,11 @@
     justify-content: center;
     overflow: hidden;
 }
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .shop-cart {
     display: flex;
     align-items: center;
@@ -89,6 +94,9 @@
 /* Grid */
 .justify-items-start {
     justify-items: start;
+}
+.justify-items {
+    justify-items: center;
 }
 .grid {
     display: grid;
@@ -196,6 +204,7 @@
     margin-top: calc(1.25rem * calc(1 - var(--space-y-reverse)));
     margin-bottom: calc(1.25rem * var(--space-y-reverse));
 }
+/* 24px */
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
     --space-y-reverse: 0;
     margin-top: calc(1.5rem * calc(1 - var(--space-y-reverse)));
@@ -225,6 +234,10 @@
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
+}
+/* 312px*/
+.max-w-s {
+    max-width: 19.5rem;
 }
 .max-w-xl {
     max-width: 36rem;
@@ -600,6 +613,10 @@
 .pt-12-x {
     padding-top: 3.125rem;
 }
+/* 60px */
+.pt-13 {
+    padding-top: 3.75rem;
+}
 .pt-16 {
     padding-top: 4rem;
 }
@@ -681,6 +698,11 @@
 .py-27 {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
+}
+/* 180px */
+.py-31 {
+    padding-top: 11.25rem;
+    padding-bottom: 11.25rem;
 }
 .px-1 {
     padding-left: .25rem;
@@ -1005,6 +1027,11 @@
 .text-6xl {
     font-size: 3.438rem;
     line-height: 4rem;
+}
+/* 64px */
+.text-7xl {
+    font-size: 4rem;
+    line-height: 5rem;
 }
 /* 120px */
 .text-10xl {
