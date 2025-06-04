@@ -37,6 +37,9 @@
     --font5: "Inter", sans-serif;
     --color-primary: #f3f5f6;
     --color-logo: #d7dce2;
+    --color-subcolor: #bac3cd;
+    --color-label: #eaecf0;
+    --color-border: #da8023;
     --grey: #757575;
     --dark-grey: #353535;
     --background: #111418;
@@ -53,9 +56,15 @@
 .font-primary {
     font-family: var(--font-primary), 'sans-serif';
 }
+.font-secondary {
+    font-family: var(--font-secondary), 'sans-serif';
+}
 .color-primary {
     color: var(--color-primary);
 }
 .color-muted {
     color: var(--grey);
+}
+.color-label {
+    color: var(--color-label);
 }

@@ -35,3 +35,37 @@
 .time {
     margin-left: 2.75rem;
 }
+/* Hero */
+.hero {
+    background-size: 84%;
+    background-image: url('../assets/img/Burger.png');
+    background-repeat: no-repeat;
+    background-position-x: 168%;
+    background-position-y: 28%;
+}
+.hero-card {
+    max-width: 60%;
+}
+.title {
+    text-shadow: #6b7d92 2px 2px 0, 2px 2px 2px
+}
+.subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--color-subcolor);
+}
+.burger-button {
+    width: 260px;
+    height: 62px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    font-size: 18px;
+    text-align: center;
+    color: var(--color-border);
+}
+a.burger-button:hover {
+    background-color: var(--color-border);
+    color: var(--background);
+}
