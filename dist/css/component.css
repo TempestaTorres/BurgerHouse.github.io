@@ -330,6 +330,9 @@
 .mb-12 {
     margin-bottom: 3rem;
 }
+.mb-17 {
+    margin-bottom: 4.5rem;
+}
 .my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -358,6 +361,10 @@
 /* 24px */
 .gap-6 {
     gap: 1.5rem;
+}
+/* 26px */
+.gap-6-x {
+    gap: 1.625rem;
 }
 .gap-7 {
     gap: 1.75rem;
@@ -968,6 +975,9 @@
 .font-s-medium {
     font-weight: 400;
 }
+.font-thing {
+    font-weight: 300;
+}
 .font-semibold {
     font-weight: 600;
 }
@@ -1006,7 +1016,7 @@
 /* 32px */
 .text-3xl {
     font-size: 2rem;
-    line-height: 2rem;
+    line-height: 2.438rem;
 }
 /* 34px */
 .text-3xxl {

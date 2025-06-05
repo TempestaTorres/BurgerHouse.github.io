@@ -55,6 +55,9 @@
     line-height: 29px;
     color: var(--color-subcolor);
 }
+.label {
+    line-height: 1;
+}
 .burger-button {
     width: 260px;
     height: 62px;
@@ -68,4 +71,46 @@
 a.burger-button:hover {
     background-color: var(--color-border);
     color: var(--background);
+}
+/* Menu */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 24px;
+    row-gap: 60px;
+}
+.menu-card {
+    border: 1px solid var(--dark-grey);
+    border-radius: 16px;
+    background-color: rgba(33, 26, 22, 0.6);/*var(--cards);*/
+}
+.menu-card__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.menu-card__img img {
+    width: 320px;
+    height: 320px;
+}
+.menu-card__body {
+    padding: 0 35px 50px 35px;
+}
+.menu-card-btn {
+    width: 182px;
+    padding-left: 35px;
+    padding-right: 35px;
+    & .basket {
+        margin-left: 0.625rem;
+        & path {
+            fill: var(--color-border);
+        }
+    }
+}
+.menu-card-btn:hover .basket path {
+    fill: var(--background);
+}
+.price div:nth-child(2) {
+    margin-top: 11px;
 }
