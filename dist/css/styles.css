@@ -36,12 +36,12 @@
     margin-left: 2.75rem;
 }
 /* Hero */
-.hero {
+main {
     background-size: 84%;
     background-image: url('../assets/img/Burger.png');
     background-repeat: no-repeat;
     background-position-x: 168%;
-    background-position-y: 28%;
+    background-position-y: -3%;
 }
 .hero-card {
     max-width: 60%;
@@ -113,4 +113,61 @@ a.burger-button:hover {
 }
 .price div:nth-child(2) {
     margin-top: 11px;
+}
+
+.bg-delivery {
+    background-image: url("../assets/img/burger-delivery.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: -157% 0;
+}
+
+/* Form */
+.form-container {
+    padding: 3.75rem 2.5rem;
+    background: var(--cards);
+    border: 1px solid var(--dark-grey);
+    border-radius: 16px;
+    max-width: 424px;
+    transform: translate3d(140%, 0, 0);
+}
+.form-control {
+    width: 100%;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: transparent;
+    padding: 16px 10px;
+    height: 62px;
+}
+::placeholder {
+    font-weight: 600;
+    color: var(--grey);
+}
+button[type="submit"]:hover {
+    background-color: var(--color-border);
+    color: var(--background);
+}
+select {
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    flex: 1;
+    cursor:pointer;
+    color: var(--grey);
+    font-weight: 600;
+    font-size: 16px;
+}
+.arrow {
+    margin-right: 6px;
+    cursor: pointer;
+}
+.select-container:hover .arrow svg path {
+    stroke: var(--color-border);
+}
+option {
+    background: var(--cards);
+}
+.footer-container {
+    padding-bottom: 3.75rem;
 }

@@ -39,6 +39,7 @@
     --color-logo: #d7dce2;
     --color-subcolor: #bac3cd;
     --color-label: #eaecf0;
+    --color-form: #6b7d92;
     --color-border: #da8023;
     --grey: #757575;
     --dark-grey: #353535;
@@ -70,6 +71,9 @@
 }
 .color-label {
     color: var(--color-label);
+}
+.color-form {
+    color: var(--color-form);
 }
 .bg-radial {
     background-image: radial-gradient(25% 75%, #fff 0%, #f0f 100%);
