@@ -1,4 +1,8 @@
-
+header.header-active {
+    background-color: var(--color-header);
+    box-shadow: 0 0 2px 0 #dddddddd;
+    backdrop-filter: blur(12px);
+}
 .header-container {
     display: flex;
     align-items: center;
@@ -132,6 +136,12 @@ a.burger-button:hover {
     border: 1px solid var(--dark-grey);
     border-radius: 16px;
     max-width: 424px;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .3s;
+    transform: translate3d(-140%, 0, 0);
+}
+.form-container.form-container-active {
     transform: translate3d(140%, 0, 0);
 }
 .form-control {
