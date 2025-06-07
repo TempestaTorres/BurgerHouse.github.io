@@ -42,6 +42,7 @@
     --color-label: #eaecf0;
     --color-form: #6b7d92;
     --color-border: #da8023;
+    --color-valid: #178a17;
     --grey: #757575;
     --dark-grey: #353535;
     --background: #191411;/*#111418;*/
@@ -78,6 +79,14 @@
 }
 .bg-radial {
     background-image: radial-gradient(25% 75%, #fff 0%, #f0f 100%);
+}
+.text-red {
+    color: var(--dangerous);
+    margin-top: .25rem !important;
+}
+.text-valid {
+    color: var(--color-form);
+    margin-top: .25rem !important;
 }
 .glow img {
     filter: drop-shadow(0 0 3rem #da8023); /*#da8023 #D7DCE2FF */

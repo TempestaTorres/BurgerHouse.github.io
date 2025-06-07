@@ -1,11 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    'use strict'
+
     const bgLeft = document.querySelector("#bg-paper-left");
     const bgRight = document.querySelector("#bg-paper-right");
     const header = document.querySelector('.header');
     const ScrollItems = document.querySelectorAll('.slide-up');
     const formContainer = document.querySelector('.form-container');
     const form = document.querySelector('#form');
+    const select = document.querySelector('#choice');
+    const menuContainer = document.querySelector('.menu-container');
 
     let scrollX;
     let scrollY;
@@ -49,7 +53,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
         requestAnimationFrame(scrollHandler);
     }
+    function menuHandler(e){
 
+        if (e.target.nodeName === 'A') {
+
+            setSelectOption(select, e.target.dataset.cardName);
+            select.dispatchEvent(new Event('change'));
+            e.stopPropagation();
+        }
+    }
+    function arrowHandler(e){
+
+
+
+    }
+
+    // Entry Point
     scrollHandler();
-
+    menuContainer.addEventListener('click', menuHandler);
+    validateForm(form, select,'thanks');
 });

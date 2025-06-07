@@ -50,3 +50,17 @@ function elClosestParent(child, className) {
         return elClosestParent(child.parentNode, className);
     }
 }
+// Example usage: assume cardName is obtained from a card click
+// For demonstration, we'll call it with a sample name
+//const cardName = "John"; // Replace with actual card name from click event
+//setSelectOption(selectId,cardName);
+function setSelectOption(select, value) {
+
+    // Find the option with matching value and set it as selected
+    for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].value === value) {
+            select.options[i].selected = true;
+            break; // Exit loop once match is found
+        }
+    }
+}
