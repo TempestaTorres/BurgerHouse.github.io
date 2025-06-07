@@ -121,9 +121,20 @@ function validateForm(form, select , thanks) {
 
         if (form.checkValidity() && isSelectValid(select)) {
             console.log('valid');
-            buttonSubmit.nextElementSibling.textContent = 'Спасибо за заказ!';
+            //buttonSubmit.nextElementSibling.textContent = 'Спасибо за заказ!';
             form.reset();
+            form.parentNode.classList.add('was-validated');
 
+            setTimeout(() => {
+
+                form.parentNode.style.display = 'none';
+                const p = document.createElement('p');
+                p.textContent = 'Спасибо за заказ!';
+
+                thanks.appendChild(p);
+                thanks.style.display = 'block';
+
+            }, 600);
         }
         else {
             console.log('invalid');

@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector('#form');
     const select = document.querySelector('#choice');
     const menuContainer = document.querySelector('.menu-container');
+    const thanks = document.querySelector('.thanks-text');
 
     let scrollX;
     let scrollY;
@@ -57,6 +58,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (e.target.nodeName === 'A') {
 
+            if (form.parentNode.style.display === 'none') {
+
+                const child = thanks.firstElementChild;
+                thanks.removeChild(child);
+                thanks.style.display = 'none';
+                form.parentNode.classList.remove('was-validated');
+                form.parentNode.style.display = 'block';
+            }
+
             setSelectOption(select, e.target.dataset.cardName);
             select.dispatchEvent(new Event('change'));
             e.stopPropagation();
@@ -66,5 +76,5 @@ document.addEventListener("DOMContentLoaded", () => {
     // Entry Point
     scrollHandler();
     menuContainer.addEventListener('click', menuHandler);
-    validateForm(form, select,'thanks');
+    validateForm(form, select,thanks);
 });

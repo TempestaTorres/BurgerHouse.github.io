@@ -188,6 +188,19 @@ label:after {
 option {
     background: var(--cards);
 }
+.form-container:is(.was-validated) {
+    animation: .5s ease forwards;
+    animation-name: fadeOut;
+}
+.thanks-text {
+    display: none;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 -1px 4px #f8f4f1, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    animation: .5s ease;
+    animation-name: fadeIn;
+}
 .footer-container {
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
