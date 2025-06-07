@@ -62,11 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
             e.stopPropagation();
         }
     }
-    function arrowHandler(e){
-
-
-
-    }
 
     // Entry Point
     scrollHandler();
